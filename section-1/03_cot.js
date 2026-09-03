@@ -66,4 +66,4 @@ async function main(prompt) {
     }
 }
 
-main('What is 4*21-4/6*25.4?')
+main('What is 4*21-4/6*25.4+3*81?')
