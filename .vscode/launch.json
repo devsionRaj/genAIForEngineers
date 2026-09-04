@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug current Node file",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/${input:javascriptFile}",
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": true,
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "name": "Debug 04_cotTools.js",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/section-1/04_cotTools.js",
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": true,
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        }
+    ],
+    "inputs": [
+        {
+            "id": "javascriptFile",
+            "type": "promptString",
+            "description": "Workspace-relative JavaScript file to debug",
+            "default": "section-1/04_cotTools.js"
+        }
+    ]
+}
