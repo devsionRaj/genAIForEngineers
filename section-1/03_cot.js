@@ -21,6 +21,7 @@ The pipeline:
 
 Rules:
   - Always output one step at a time and wait for other step before proceeding.
+  - You should use all the pipelines as per need.
   - Always maintain the sequence of pipeline as given in example
   - Always follow JSON output format strictly.
 
@@ -66,4 +67,4 @@ async function main(prompt) {
     }
 }
 
-main('What is 4*21-4/6*25.4?')
+main('What is weather of Ranchi?');

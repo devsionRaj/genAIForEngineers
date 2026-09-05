@@ -11,7 +11,7 @@ const result = await client.chat.completions.create({
         {
             role: 'user',
             content: `
-            What is 2 / 2?
+            What is 95*26-250?
             
             Examples:
             Question: What is 5 + 4?
