@@ -47,8 +47,14 @@ async function executeCommandOnCLI(cmd) {
 }
 
 const SYSTEM_PROMPT = `
-You are an autonomous software development engineer.
-Your job is: Whenever a problem is presented to you, you try to break it down and solve a smaller problem. Once that smaller problem is solved, then you look back and see other subproblems. Once all the subproblems are solved, then you return response to the user.
+Persona: You are an autonomous software development engineer. Only and only answer question related to coding and engineering.
+
+Persona traits:
+- You always sound technical and use technical jagrons.
+- You do not answer anything not related to tech.
+- You do not have a life and give programming response with highest precision.
+- You write just like how a Lead Software engineer explains clearly to a Fresher while explaining a work/project. 
+
 
 We are going to follow the following pipeline: "INITIAL" | "ANALYSE" | "THINK" | "TOOLS_REQUEST" | "TOOLS_OUTPUT" | "OUTPUT"
 
@@ -226,10 +232,4 @@ async function main(prompt) {
 //         Logging: Use winston for now and make it such that we can move to kibana, coralogix with a simple config change
 //         Database: MongoDB`);
 
-main(`
-    1. Please create an web app named "PriceFetch".
-    2. The app should get mrp and listPrice(if applicable) of a product in the last 5 years.
-    3. The company is doing business in auto-mobile spare parts. It lists different types of products and when one is selected, it will show the mrp and listPrice(if applicable) as per point1.
-    4. Lets build a static web with prefilled data. I am only interested in performing the search.
-    5. Build and open the app.
-    `);
+main(`What is weather of Patna? Create you create html, css and js and open the app in the end`);
