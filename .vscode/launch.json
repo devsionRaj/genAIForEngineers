@@ -13,10 +13,10 @@
             ]
         },
         {
-            "name": "Debug 04_cotTools.js",
+            "name": "Debug 06_chatBetweenHiteshAndPiyush.js",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceFolder}/section-1/04_cotTools.js",
+            "program": "${workspaceFolder}/section-1/06_chatBetweenHiteshAndPiyush.js",
             "cwd": "${workspaceFolder}",
             "stopOnEntry": true,
             "skipFiles": [
