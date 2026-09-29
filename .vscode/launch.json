@@ -13,6 +13,20 @@
             ]
         },
         {
+            "name": "Debug generated review crawler",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/rag-practice/run-generated-review-crawler.js",
+            "args": [
+                "${input:reviewCrawlerUrl}"
+            ],
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": false,
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
             "name": "Debug 06_chatBetweenHiteshAndPiyush.js",
             "type": "node",
             "request": "launch",
@@ -25,6 +39,12 @@
         }
     ],
     "inputs": [
+        {
+            "id": "reviewCrawlerUrl",
+            "type": "promptString",
+            "description": "URL to crawl with the generated review function",
+            "default": "https://bizratesurveys.com/reviews/lampsplus-reviews"
+        },
         {
             "id": "javascriptFile",
             "type": "promptString",
